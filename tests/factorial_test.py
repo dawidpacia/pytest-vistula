@@ -1,11 +1,16 @@
 from src.factorial import factorial
+import pytest
 
 
-def test_positive():
-    assert factorial(4) == 24
-
-def test_zero():
-    assert factorial(0) == 1
-
-def test_negative():
-    assert factorial(-10) == False
+@pytest.mark.parametrize(
+    "n,result",
+    [
+        (4, 24),
+        (0, 1),
+        (-10, False),
+        ("test", False),
+        (1.5, False)
+    ]
+)
+def test_factorial(n, result):
+    assert factorial(n) == result
