@@ -6,3 +6,4 @@
 1) Add 2 paths to `System Environment Variables -> PATH`
 - Python home folder (usually `C:\Users\x\AppData\Local\Programs\Python\Python_%version%`)
 - Python Scripts folder ((usually `C:\Users\x\AppData\Local\Programs\Python\Python_%version%\Scripts`))
+2) Open CMD or PowerShell `Run as administrator`
