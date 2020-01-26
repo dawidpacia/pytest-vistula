@@ -10,6 +10,7 @@ def factorial(n):
         return False
 
 
-print(factorial(-1))
-print(factorial(0))
-print(factorial(4))
+if __name__ == "__main__":
+    print(factorial(-1))
+    print(factorial(0))
+    print(factorial(4))
